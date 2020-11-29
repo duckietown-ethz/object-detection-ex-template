@@ -1,0 +1,4 @@
+ARG dockerfile
+FROM $dockerfile
+
+RUN python3 -c "from model import Wrapper; wrapper = Wrapper();"
