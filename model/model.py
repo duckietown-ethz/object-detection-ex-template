@@ -5,8 +5,7 @@ from torchvision.transforms.functional import to_tensor
 class Wrapper:
     def __init__(self):
         # TODO Instantiate your model and other class instances here!
-        # TODO Don't forget to set your model in evaluation/testing/production mode, and sending it to the GPU
-        # TODO If no GPU is available, raise the NoGPUAvailable exception
+        # TODO Don't forget to set your model in evaluation/testing/production mode, and sending it to the GPU (if you have one)
 
         self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
         self.model = Model()
